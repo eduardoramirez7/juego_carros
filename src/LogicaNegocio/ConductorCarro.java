@@ -5,6 +5,9 @@
  */
 package LogicaNegocio;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author ibago
@@ -21,13 +24,12 @@ public class ConductorCarro {
         this.pistaCarrera = new Pista();
     }
     
-    public void asociarConductorCarro(){
-        String nombreConductor = condutor.getNombrejugador();
-        int numeroCarro = carroConductor.getNumeroCarro();
-        int carril = pistaCarrera.getNumeroCarriles();
-        
-        System.out.println("El conductor "+nombreConductor+" tiene asociado el carro numero"
-                + " "+numeroCarro+", ubicado en el carril "+carril);
+    public void asociarConductorCarro(List<List<String>> a){
+
+        for (int i = 0; i < a.get(0).size(); i++) {
+            System.out.println("Jugador "+(i+1)+": nombre: "+a.get(0).get(i)+" - Carro numero: "+a.get(1).get(i)+" - Carril: "+a.get(2).get(i));
+        }
+
     }
 
     @Override
