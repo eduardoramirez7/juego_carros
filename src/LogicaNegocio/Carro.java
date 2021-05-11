@@ -29,8 +29,10 @@ public class Carro {
         this.numeroCarro = numeroCarro;
     }
     
-    public void avanzar(){
-        
+    public int avanzar(){
+        int dado = (int)(Math.random()*6+1);
+        int avenceCarro = dado*100;
+        return avenceCarro;
     }
     
 }

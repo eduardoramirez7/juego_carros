@@ -30,19 +30,6 @@ public class ConductorCarro {
             System.out.println("Jugador "+(i+1)+": nombre: "+a.get(0).get(i)+" - Carro numero: "+a.get(1).get(i)+" - Carril: "+a.get(2).get(i));
         }
 
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        String nombreConductor = condutor.getNombrejugador();
-        int numeroCarro = carroConductor.getNumeroCarro();
-        int carril = pistaCarrera.getNumeroCarriles();
-        
-        sb.append("\nNombre: ");
-        sb.append(condutor.nombrejugador);    
-        return sb.toString();
-    }
-    
+    }   
     
 }
